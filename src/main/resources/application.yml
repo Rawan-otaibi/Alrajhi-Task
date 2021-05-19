@@ -1,0 +1,25 @@
+spring.security.user.name : admin
+spring.security.user.password: password
+
+spring:
+  redis:
+    host: 127.0.0.1
+
+
+
+    port: 6379
+    cache:
+      type: redis
+      redis:
+        time-to-live: 30s
+        
+  datasource:
+    url: jdbc:mysql://localhost/movies
+    username: root
+    password: rootpassword
+
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
